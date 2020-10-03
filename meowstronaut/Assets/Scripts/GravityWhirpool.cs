@@ -24,7 +24,6 @@ public class GravityWhirpool : MonoBehaviour
         // if hit by Kat, restart level
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log("GalactiKat collided with whirpool");
             LevelController.RestartLevel();
         }
     }
