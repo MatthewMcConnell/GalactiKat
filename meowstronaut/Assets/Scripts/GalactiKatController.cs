@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GalactiKatController : MonoBehaviour
 {
+    // a boolean flag I need to use to stop the level restarting instead of moving onto the next leve
+    public bool shouldRestart = true;
     public bool onMoon = false;
     GameObject currentMoon = null;
     public float jumpForce;
@@ -40,7 +42,8 @@ public class GalactiKatController : MonoBehaviour
 
     void OnBecameInvisible()
     {
-        LevelController.RestartLevel();
+        if (shouldRestart)
+            LevelController.RestartLevel();
     }
 
     void Jump()
