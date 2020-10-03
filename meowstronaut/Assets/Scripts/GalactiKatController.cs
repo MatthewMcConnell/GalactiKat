@@ -38,6 +38,11 @@ public class GalactiKatController : MonoBehaviour
         }
     }
 
+    void OnBecameInvisible()
+    {
+        LevelController.RestartLevel();
+    }
+
     void Jump()
     {
         fixedJoint.autoConfigureConnectedAnchor = true;
