@@ -20,12 +20,13 @@ public class LevelController : MonoBehaviour
 
     public static void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Restart (remeber to change for build)");
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public static void NextLevel()
     {
-        
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Debug.Log("Next Level (remeber to change for build)");
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
