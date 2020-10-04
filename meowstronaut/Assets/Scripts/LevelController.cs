@@ -21,7 +21,7 @@ public class LevelController : MonoBehaviour
     public static void RestartLevel()
     {
         Debug.Log("Restart (remeber to change for build)");
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public static void NextLevel()

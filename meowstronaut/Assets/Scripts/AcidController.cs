@@ -22,4 +22,13 @@ public class AcidController : MonoBehaviour
     {
         transform.RotateAround(rigidBody.transform.position, Vector3.forward, velocity * Time.deltaTime);
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        // if hit by Kat, restart level
+        if (other.gameObject.tag == "Player")
+        {
+            LevelController.RestartLevel();
+        }
+    }
 }
