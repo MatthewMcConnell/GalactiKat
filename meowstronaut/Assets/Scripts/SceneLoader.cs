@@ -8,7 +8,7 @@ public class SceneLoader : MonoBehaviour
     public void Launch()
     {
         //cutscene loader code here
-            //please edit if needed or can be optimised:
+        //please edit if needed or can be optimised:
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
