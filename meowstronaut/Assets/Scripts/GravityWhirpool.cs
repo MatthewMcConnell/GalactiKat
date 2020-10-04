@@ -32,7 +32,7 @@ public class GravityWhirpool : MonoBehaviour
     IEnumerator Restart()
     {
         audioSource.Play();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.5f);
         LevelController.RestartLevel();
     }
 }
