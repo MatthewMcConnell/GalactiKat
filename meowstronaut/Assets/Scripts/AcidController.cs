@@ -6,6 +6,8 @@ public class AcidController : MonoBehaviour
 {
     public Rigidbody2D rigidBody;
     public float velocity;
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +30,14 @@ public class AcidController : MonoBehaviour
         // if hit by Kat, restart level
         if (other.gameObject.tag == "Player")
         {
-            LevelController.RestartLevel();
+            StartCoroutine(Restart());
         }
+    }
+
+    IEnumerator Restart()
+    {
+        audioSource.Play();
+        yield return new WaitForSeconds(2);
+        LevelController.RestartLevel();
     }
 }

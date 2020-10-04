@@ -46,10 +46,7 @@ public class GalactiKatController : MonoBehaviour
     void OnBecameInvisible()
     {
         if (shouldRestart)
-        {
-            StartCoroutine(PlayFailureSoundAndRestart());
-        }
-            
+            StartCoroutine(Restart());
     }
 
     void Jump()
@@ -63,8 +60,7 @@ public class GalactiKatController : MonoBehaviour
         audioSource.Play();
     }
 
-
-    IEnumerator PlayFailureSoundAndRestart()
+    IEnumerator Restart()
     {
         audioSource.clip = failSound;
         audioSource.Play();

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TargetPlanetController : MonoBehaviour
 {
+
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +24,17 @@ public class TargetPlanetController : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<GalactiKatController>().shouldRestart = false;
-            LevelController.NextLevel();
+            StartCoroutine(Next());
         }
             
+    }
+
+
+    IEnumerator Next()
+    {
+        audioSource.Play();
+        yield return new WaitForSeconds(2);
+        LevelController.NextLevel();
     }
 
 }

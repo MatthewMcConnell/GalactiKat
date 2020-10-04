@@ -7,6 +7,7 @@ public class GravityWhirpool : MonoBehaviour
     public bool inRadius = false;
 
     public Rigidbody2D Radius;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,14 @@ public class GravityWhirpool : MonoBehaviour
         // if hit by Kat, restart level
         if (other.gameObject.tag == "Player")
         {
-            LevelController.RestartLevel();
+            StartCoroutine(Restart());
         }
+    }
+
+    IEnumerator Restart()
+    {
+        audioSource.Play();
+        yield return new WaitForSeconds(2);
+        LevelController.RestartLevel();
     }
 }
