@@ -11,11 +11,14 @@ public class GalactiKatController : MonoBehaviour
     public float jumpForce;
     public Rigidbody2D katRigidBody;
     public FixedJoint2D fixedJoint;
+    public AudioSource audioSource;
+    public AudioClip jumpSound;
+    public AudioClip failSound;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -43,7 +46,10 @@ public class GalactiKatController : MonoBehaviour
     void OnBecameInvisible()
     {
         if (shouldRestart)
-            LevelController.RestartLevel();
+        {
+            StartCoroutine(PlayFailureSoundAndRestart());
+        }
+            
     }
 
     void Jump()
@@ -52,5 +58,17 @@ public class GalactiKatController : MonoBehaviour
         onMoon = false;
         fixedJoint.enabled = false;
         katRigidBody.velocity = (transform.position - currentMoon.transform.position) * jumpForce;
+
+        audioSource.clip = jumpSound;
+        audioSource.Play();
+    }
+
+
+    IEnumerator PlayFailureSoundAndRestart()
+    {
+        audioSource.clip = failSound;
+        audioSource.Play();
+        yield return new WaitForSeconds(2);
+        LevelController.RestartLevel();
     }
 }
