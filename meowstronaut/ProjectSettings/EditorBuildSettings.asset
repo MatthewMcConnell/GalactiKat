@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SaturnLevel.unity
     guid: d92117836215d1b43a5ccd1156a78555
+  - enabled: 1
+    path: Assets/Scenes/JupiterLevel.unity
+    guid: 35c6471eef312d24abd852a85d35a696
   m_configObjects: {}
