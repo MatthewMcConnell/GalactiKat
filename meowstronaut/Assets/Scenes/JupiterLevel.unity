@@ -1442,6 +1442,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63c7c5e55bd7b294bb56c9bd18b8bb50, type: 3}
+--- !u!1 &1383488807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1416001868663637314, guid: ea7a1fe5fc29a6f4b9efffe568fabc97,
+    type: 3}
+  m_PrefabInstance: {fileID: 1846150645}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &1383488808
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383488807}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.2, y: 0.2}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046243828, y: 0.08603325}
+      - {x: -0.096243724, y: 0.044999994}
+      - {x: -0.1112687, y: -0.028925644}
+      - {x: -0.108600296, y: -0.02809942}
+      - {x: -0.048706293, y: -0.08285126}
+      - {x: -0.049975112, y: -0.087107606}
+      - {x: 0.041218847, y: -0.0871076}
+      - {x: 0.08873129, y: -0.053512692}
+      - {x: 0.107512444, y: 0.0045048124}
+      - {x: 0.05375615, y: 0.08495889}
 --- !u!1001 &1679597872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3330,6 +3371,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Whirpool (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1416001868464637642, guid: ea7a1fe5fc29a6f4b9efffe568fabc97,
+        type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1416001868464637643, guid: ea7a1fe5fc29a6f4b9efffe568fabc97,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3394,6 +3440,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 18.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416001868663637321, guid: ea7a1fe5fc29a6f4b9efffe568fabc97,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea7a1fe5fc29a6f4b9efffe568fabc97, type: 3}
