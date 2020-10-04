@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CutsceneController : MonoBehaviour
 {
     public Image[] comicMasks;
+    public bool isOutro;
 
     // Start is called before the first frame update
     void Start()
@@ -17,14 +19,17 @@ public class CutsceneController : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
-            LevelController.NextLevel();
+            if (isOutro)
+                SceneManager.LoadScene(0);
+            else
+                LevelController.NextLevel();
     }
 
     IEnumerator fadeMasks()
     {
         yield return new WaitForSeconds(2);
 
-        float waitInterval = 28.0f / comicMasks.Length;
+        float waitInterval = 23.0f / comicMasks.Length;
 
         for (int i = 0; i < comicMasks.Length; i++)
         {
@@ -38,5 +43,10 @@ public class CutsceneController : MonoBehaviour
             comicMasks[i].enabled = false;
             yield return new WaitForSeconds(waitInterval);
         }
+
+        if (isOutro)
+            SceneManager.LoadScene(0);
+        else
+            LevelController.NextLevel();
     }
 }
