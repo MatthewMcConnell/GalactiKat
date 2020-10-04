@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8527675742894241646}
   - component: {fileID: 8527675742894241645}
   - component: {fileID: 8527675742894241648}
-  - component: {fileID: 8527675742894241649}
   - component: {fileID: 8527675742894241650}
   - component: {fileID: 3107672686660055759}
+  - component: {fileID: 7833271622230767830}
   m_Layer: 0
   m_Name: GalactiKat
   m_TagString: Player
@@ -30,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8527675742894241644}
   m_LocalRotation: {x: -0, y: -0, z: 0.70260227, w: 0.7115828}
-  m_LocalPosition: {x: 2.59, y: 1.18, z: -2.4684305}
-  m_LocalScale: {x: 5.65541, y: 8.92, z: 1}
+  m_LocalPosition: {x: 36.995, y: 22.852, z: -2.4684305}
+  m_LocalScale: {x: 0.11724611, y: 0.18492652, z: 0.020731673}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 2f3a60780ae994c4692f5c587cd4a8ea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,32 +126,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &8527675742894241649
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8527675742894241644}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
-  m_EdgeRadius: 0
 --- !u!255 &8527675742894241650
 FixedJoint2D:
   m_ObjectHideFlags: 0
@@ -167,7 +141,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 2.59, y: 1.18}
+  m_ConnectedAnchor: {x: 36.995, y: 22.852}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!82 &3107672686660055759
@@ -266,3 +240,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!70 &7833271622230767830
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527675742894241644}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000011055794, y: -0.75683725}
+  m_Size: {x: 8.000005, y: 6.316323}
+  m_Direction: 0
