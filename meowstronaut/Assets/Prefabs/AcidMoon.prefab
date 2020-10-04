@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 5571946561302805141}
-  velocity: -90
+  velocity: -40
 --- !u!232 &5543422483030554869
 DistanceJoint2D:
   m_ObjectHideFlags: 0

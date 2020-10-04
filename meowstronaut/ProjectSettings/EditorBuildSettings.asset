@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JupiterLevel.unity
     guid: 35c6471eef312d24abd852a85d35a696
+  - enabled: 1
+    path: Assets/Scenes/MarsLevel.unity
+    guid: 8c166dc1ee3216047bd523475170888c
   m_configObjects: {}
