@@ -32,7 +32,7 @@ public class GalactiKatController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         // If hit by a moon then land on it
-        if (other.gameObject.tag == "Moon" && other.gameObject != currentMoon) 
+        if (other.gameObject.tag == "Moon" && !onMoon)
         {
             onMoon = true;
             fixedJoint.enabled = true;

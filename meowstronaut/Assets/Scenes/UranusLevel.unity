@@ -2947,7 +2947,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 5
+  m_Radius: 5.97
 --- !u!1001 &579312884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4058,7 +4058,7 @@ PrefabInstance:
     - target: {fileID: 8527675742894241647, guid: 5ff1a685aeec96c4cb07707bfaf064c4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.6499996
+      value: 6.38
       objectReference: {fileID: 0}
     - target: {fileID: 8527675742894241647, guid: 5ff1a685aeec96c4cb07707bfaf064c4,
         type: 3}
