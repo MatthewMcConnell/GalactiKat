@@ -25,7 +25,7 @@ public class GalactiKatController : MonoBehaviour
     void Update()
     {
         // Jumps on Space
-        if (Input.GetKeyDown(KeyCode.Space) && onMoon)
+        if (Input.GetKey(KeyCode.Space) && onMoon)
             Jump();
     }
 

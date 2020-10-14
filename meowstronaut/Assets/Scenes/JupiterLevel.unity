@@ -290,6 +290,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalactiKat
       objectReference: {fileID: 0}
+    - target: {fileID: 8527675742894241645, guid: 5ff1a685aeec96c4cb07707bfaf064c4,
+        type: 3}
+      propertyPath: jumpForce
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8527675742894241647, guid: 5ff1a685aeec96c4cb07707bfaf064c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -348,12 +353,12 @@ PrefabInstance:
     - target: {fileID: 8527675742894241650, guid: 5ff1a685aeec96c4cb07707bfaf064c4,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 5.5
+      value: 7.2
       objectReference: {fileID: 0}
     - target: {fileID: 8527675742894241650, guid: 5ff1a685aeec96c4cb07707bfaf064c4,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.06
+      value: 0.09
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ff1a685aeec96c4cb07707bfaf064c4, type: 3}
@@ -3379,12 +3384,12 @@ PrefabInstance:
     - target: {fileID: 1416001868464637643, guid: ea7a1fe5fc29a6f4b9efffe568fabc97,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.46
+      value: -2.4
       objectReference: {fileID: 0}
     - target: {fileID: 1416001868464637643, guid: ea7a1fe5fc29a6f4b9efffe568fabc97,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.735
+      value: 0.82
       objectReference: {fileID: 0}
     - target: {fileID: 1416001868464637643, guid: ea7a1fe5fc29a6f4b9efffe568fabc97,
         type: 3}
@@ -3628,7 +3633,7 @@ PrefabInstance:
     - target: {fileID: 125457027991364708, guid: 63c7c5e55bd7b294bb56c9bd18b8bb50,
         type: 3}
       propertyPath: rotationSpeed
-      value: 40
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4646537457530736975, guid: 63c7c5e55bd7b294bb56c9bd18b8bb50,
         type: 3}
